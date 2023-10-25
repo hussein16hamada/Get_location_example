@@ -37,15 +37,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        locationTextView = findViewById(R.id.locationTextView)
-        startLocationUpdatesButton = findViewById(R.id.startLocationUpdatesButton)
+//        locationTextView = findViewById(R.id.locationTextView)
+//        startLocationUpdatesButton = findViewById(R.id.startLocationUpdatesButton)
 
-        locationCallBack()
+//        locationCallBack()
+//
+//
+//        startLocationUpdatesButton.setOnClickListener {
+//            requestLocationUpdates()
+//        }
+        val fragment = TestFragment() // Replace `YourFragment` with the actual fragment you want to open
 
+        val transaction = supportFragmentManager.beginTransaction()
 
-        startLocationUpdatesButton.setOnClickListener {
-            requestLocationUpdates()
-        }
+        transaction.replace(R.id.fragmentContainerView, fragment)
+
+        transaction.addToBackStack(null) // Optional: Allows the user to navigate back
+        transaction.commit()
 
 
     }
