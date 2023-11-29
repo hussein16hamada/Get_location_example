@@ -21,4 +21,59 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/locationTextView"
         android:text="Start Location Updates" />
+
+
+    <TextView
+        android:id="@+id/physicalActivityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startLocationUpdatesButton"
+        android:layout_marginTop="60dp"
+        android:text="PhysicalActivity: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/startPhysicalActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/physicalActivityTextView"
+        android:text="Start Physical Activity" />
+
+
+
+    <TextView
+        android:id="@+id/ignoreBatteryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startPhysicalActivityButton"
+        android:layout_marginTop="60dp"
+        android:text="ignoreBattery: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ignoreBatteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ignoreBatteryTextView"
+        android:text="ignoreBattery" />
+
+
+
+    <TextView
+        android:id="@+id/backgroundLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ignoreBatteryButton"
+        android:layout_marginTop="60dp"
+        android:text="backgroundLocation: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/backgroundLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backgroundLocationTextView"
+        android:text="backgroundLocation" />
 </RelativeLayout>

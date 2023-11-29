@@ -131,23 +131,23 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        Log.d(TAG, "requestCode: ${requestCode}")
-
-        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
-            Log.d(TAG, "onRequestPermissionsResult: LOCATION_PERMISSION_REQUEST_CODE")
-            Log.d(TAG, "onRequestPermissionsResult: ${grantResults[0]}")
-
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Log.d(TAG, "onRequestPermissionsResult: PERMISSION_GRANTED")
-
-                requestLocationUpdates()
-            }
-        }
-    }
+//    override fun onRequestPermissionsResult(
+//        requestCode: Int,
+//        permissions: Array<String>,
+//        grantResults: IntArray
+//    ) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+//        Log.d(TAG, "requestCode: ${requestCode}")
+//
+//        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
+//            Log.d(TAG, "onRequestPermissionsResult: LOCATION_PERMISSION_REQUEST_CODE")
+//            Log.d(TAG, "onRequestPermissionsResult: ${grantResults[0]}")
+//
+//            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                Log.d(TAG, "onRequestPermissionsResult: PERMISSION_GRANTED")
+//
+//                requestLocationUpdates()
+//            }
+//        }
+//    }
 }
